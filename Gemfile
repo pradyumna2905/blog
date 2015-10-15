@@ -17,6 +17,8 @@ group :development, :test do
   gem 'rspec-rails', '3.2.3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+  gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
 
   gem 'spring'
 end
