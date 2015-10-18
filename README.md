@@ -1,14 +1,14 @@
 # Blog app
 ##### A Ruby on Rails application implemented using BDD (Behavior Driven Development) and Automated Testing using the testing suites, RSpec and Capybara
 
-To run the app, git clone the repository to the desired folder and run the followin commands before running the rails server
+To run the app, git clone the repository to the desired folder and run the following commands before running the rails server
 
 ```
 bundle install
 rake db:migrate
 ```
 
-This should set up the database and install the requried gems on your local machine.*
+This should set up the database and install the required gems on your local machine.*
 
 Then start the rails server by typing
 ```
