@@ -60,16 +60,17 @@
   <header>
     <h2>Comments</h2>
   </header>
-  <div class="col-md-10">
+  <div class="col-md-12 well">
     <% if @article.comments.any? %>
       <% @article.comments.persisted.each do |comment| %>
+      <div class="comment-time">
+        <%= comment.user.email %> &bull;
+        <%= time_ago_in_words(comment.created_at) %> ago
+      </div>
       <div class="comment-body">
         <%= comment.body %>
       </div>
-      <div class="comment-time">
-        <%= time_ago_in_words(comment.created_at) %>
-        ago by <%= comment.user.email %>
-      </div>
+
       <hr>
       <% end %>
     <% else %>
